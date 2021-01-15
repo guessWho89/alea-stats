@@ -1,0 +1,80 @@
+.head-2-head {
+    .results-bars {
+        >div {
+            text-align: center;
+            padding: $space-1;
+            color: $gray-5;
+            position: relative;
+            span {
+                position: relative;
+                z-index: 1;
+                height: auto;
+            }
+            &::after {
+                content: '';
+                padding: $space-2;
+                position: absolute;
+                left: 50%;
+            }
+            &:nth-child(1),
+            &:nth-child(5) {
+                &::after {
+                    background: $green;
+                    width: 20%;
+                    transform: translateX(-85%);
+                }
+            }
+            &:nth-child(2) {
+                &::after {
+                    background: $gray-3;
+                    width: 38%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            &:nth-child(3) {
+                &::after {
+                    background-color: $bg-red-1;
+                    width: 40%;
+                    transform: translateX(-10%);
+                }
+            }
+            &:nth-child(4) {
+                &::after {
+                    background-color: $bg-green;
+                    width: 40%;
+                    transform: translateX(-92%);
+                }
+            }
+        }
+    }
+    .results-percentages {
+        @include flex-center;
+        text-align: center;
+        width: 100%;
+        .wins,
+        .draws,
+        .losses {
+            width: 100%;
+            padding: $space-1;
+            >div{
+                @include flex-center;
+                >div {
+                    width: $space-3;
+                    height: $space-3;
+                    margin-right: $space-1;
+                }
+                h4 {
+                    color: $gray-5;
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                }
+            }
+            p {
+                @include p-span;
+                font-weight: 400;
+                padding: $space-1 / 2;
+            }
+        } 
+    }
+}

@@ -1,0 +1,69 @@
+/* VENDOR - Default fall-backs and external files.
+========================================================================== */
+@import './vendor/fonts';
+@import './vendor/reset';
+
+
+/* GLOBAL - Global Variable file along with starting point Mixins and Placeholders.
+========================================================================== */
+@import './global/vars';
+@import './global/mixins';
+
+
+/* COMPONENTS - Re-usable site elements.
+========================================================================== */
+.stats-box {
+    max-width: 1200px;
+    width: 98%;
+    margin: 100px auto;
+    background-color: $gray-1;
+    padding: $space-6 $space-4;
+    border-radius: 5px;
+    .header {
+        padding: $space-2;
+        border-bottom: 2px solid $gray-3;
+        .title {
+            color: $gray-5;
+            font-weight: 500;
+        }
+    }
+    .content {
+        display: flex;
+        .box{
+            width: 100%;
+            padding: $space-4;
+            @import './components/box-head';
+            @import './components/box-title';
+            @import './components/total-goals';
+            @import './components/form';
+            @import './components/head-2-head';
+        }
+    }
+}
+
+.bg-green {
+    background-color: $bg-green;
+}
+.bg-red-1 {
+    background-color: $bg-red-1;
+}
+.bg-red-2 {
+    background-color: $bg-red-2;
+}
+.bg-gray-3 {
+    background-color: $bg-gray-3;
+}
+
+@media (max-width: 1200px) {
+    .stats-box {
+        .content {
+            flex-direction: column;
+            .box {
+                margin-bottom: $space-6;
+                &:not(:last-child) {
+                    border-bottom: 3px solid $gray-3;
+                } 
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.progress-bar-over,
+.progress-bar-under {
+    width: $space-3;
+    height: 50px;
+    background-color: $gray-2;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: $green;
+    }
+}
+
+.progress-bar-under {
+    &::after {
+        bottom: initial;
+        top: 0;
+    }
+}

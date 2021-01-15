@@ -1,0 +1,85 @@
+.total-goals {
+    @include flex-center;
+    .box-data-left,
+    .box-data-mid,
+    .box-data-right {
+        @include flex-center;
+        width: 100%;
+        .over-under {
+            @include flex-center;
+            flex-direction: column;
+            .percentage,
+            .margin {
+                @include p-span;
+                padding: $space-1;
+            }
+            @import './progress-bar';
+            &:nth-child(1) {
+                .progress-bar-over {
+                    &::after {
+                        height: 100%;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                .progress-bar-over {
+                    &::after {
+                        height: 60%;
+                    }
+                }
+                .progress-bar-under {
+                    &::after {
+                        height: 40%;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .progress-bar-over {
+                    &::after {
+                        height: 20%;
+                    }
+                }
+                .progress-bar-under {
+                    &::after {
+                        height: 80%;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                .progress-bar-over {
+                    &::after {
+                        height: 40%;
+                    }
+                }
+                .progress-bar-under {
+                    &::after {
+                        height: 60%;
+                    }
+                }
+            }
+        }
+    }
+    .box-data-right {
+        .over-under {
+            .progress-bar-over,
+            .progress-bar-under {
+                &::after {
+                    background-color: $red-1;
+                }
+            }
+        }
+    }
+    .box-data-mid {
+        flex-direction: column;
+        width: 50px;
+        p {
+            @include p-span;
+            padding: $space-2;
+        }
+        hr {
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid $gray-2;
+        }
+    }
+}

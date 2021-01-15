@@ -1,0 +1,54 @@
+.form {
+    @include flex-center;
+    padding: 0 $space-1;
+    .box-data-left,
+    .box-data-right {
+        width: 100%;
+        padding: 0 $space-2;
+    }
+    .jumbo-percentage {
+        text-align: center;
+        h1 {
+            font-size: 3rem;
+            font-weight: 400;
+            color: $gray-5;
+        }
+        p {
+            @include p-span;
+        }
+    }
+    .percentage-bars {
+        display: flex;
+        margin: $space-1 auto;
+        >div {
+            width: $space-1 / 1.25;
+            height: 25px;
+            background-color: $gray-2;
+            margin: 2px;
+            border-radius: 3px;
+        }
+    }
+    .results {
+        @include flex-center;
+        text-align: center;
+        padding: $space-1;
+        >div {
+            width: 100%;
+            margin: $space-1;
+            color: $gray-5;
+            h3 {
+                margin-bottom: $space-1;
+            }
+            p {
+                @include p-span;
+                margin-top: $space-1;
+            }
+            hr {
+                padding: $space-1 / 2.5;
+                background: $red-2;
+                border: none;
+                border-radius: 3px;
+            }
+        }
+    }
+}

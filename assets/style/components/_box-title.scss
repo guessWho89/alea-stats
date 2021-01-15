@@ -1,0 +1,11 @@
+.box-title {
+    text-align: center;
+    padding: $space-2;
+    >h4 {
+        color: $gray-5;
+        font-weight: 400;
+    }
+    >p {
+        @include p-span;
+    }
+}
