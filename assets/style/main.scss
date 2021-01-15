@@ -60,9 +60,12 @@
             flex-direction: column;
             .box {
                 margin-bottom: $space-6;
-                &:not(:last-child) {
-                    border-bottom: 3px solid $gray-3;
-                } 
+                // &:not(:first-child) {
+                //     border-top: 2px solid $gray-3;
+                // }
+                // &:not(:last-child) {
+                //     border-bottom: 2px solid $gray-3;
+                // } 
             }
         }
     }
