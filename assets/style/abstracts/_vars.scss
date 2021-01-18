@@ -25,3 +25,11 @@ $space-5: $space-1 * 5;
 $space-6: $space-1 * 6;
 
 
+/* BREAKPOINTS
+========================================================================== */
+$breakpoints: (
+    'large': 1200px,
+    'medium': 768px,
+    'small': 480px
+) !default;
+

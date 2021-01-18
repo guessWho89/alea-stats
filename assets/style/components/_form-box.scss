@@ -1,6 +1,9 @@
 .form {
     @include flex-center;
     padding: 0 $space-1;
+    @include respond-to('small') {
+        flex-direction: column;
+    }
     .box-data-left,
     .box-data-right {
         width: 100%;
@@ -8,12 +11,12 @@
     }
     .jumbo-percentage {
         text-align: center;
-        h1 {
+        .jumbo {
             font-size: 3rem;
             font-weight: 400;
             color: $gray-5;
         }
-        p {
+        >p {
             @include p-span;
         }
     }
@@ -36,14 +39,14 @@
             width: 100%;
             margin: $space-1;
             color: $gray-5;
-            h3 {
+            >h3 {
                 margin-bottom: $space-1;
             }
-            p {
+            >p {
                 @include p-span;
                 margin-top: $space-1;
             }
-            hr {
+            >hr {
                 padding: $space-1 / 2.5;
                 background: $red-2;
                 border: none;

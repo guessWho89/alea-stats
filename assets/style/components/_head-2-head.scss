@@ -5,7 +5,7 @@
             padding: $space-1;
             color: $gray-5;
             position: relative;
-            span {
+            >span {
                 position: relative;
                 z-index: 1;
                 height: auto;
@@ -64,13 +64,13 @@
                     height: $space-3;
                     margin-right: $space-1;
                 }
-                h4 {
+                >h4 {
                     color: $gray-5;
                     font-weight: 500;
                     font-size: 0.9rem;
                 }
             }
-            p {
+            >p {
                 @include p-span;
                 font-weight: 400;
                 padding: $space-1 / 2;

@@ -14,49 +14,6 @@
                 padding: $space-1;
             }
             @import './progress-bar';
-            &:nth-child(1) {
-                .progress-bar-over {
-                    &::after {
-                        height: 100%;
-                    }
-                }
-            }
-            &:nth-child(2) {
-                .progress-bar-over {
-                    &::after {
-                        height: 60%;
-                    }
-                }
-                .progress-bar-under {
-                    &::after {
-                        height: 40%;
-                    }
-                }
-            }
-            &:nth-child(3) {
-                .progress-bar-over {
-                    &::after {
-                        height: 20%;
-                    }
-                }
-                .progress-bar-under {
-                    &::after {
-                        height: 80%;
-                    }
-                }
-            }
-            &:nth-child(4) {
-                .progress-bar-over {
-                    &::after {
-                        height: 40%;
-                    }
-                }
-                .progress-bar-under {
-                    &::after {
-                        height: 60%;
-                    }
-                }
-            }
         }
     }
     .box-data-right {

@@ -16,7 +16,7 @@
     }
     .box-head-left {
         border-bottom: 3px solid $green;
-        ::after {
+        &::after {
             content: 'V';
             color: $gray-3;
             position: absolute;
@@ -27,7 +27,7 @@
     }
     .box-head-right {
         border-bottom: 3px solid $red-2;
-        ::before {
+        &::before {
             content: 'S';
             position: absolute;
             left: 0;
